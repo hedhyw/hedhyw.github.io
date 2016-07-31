@@ -2,45 +2,45 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>hedhyw. developers page</title>
+	<title>Hedhyw — Developer page</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 1.27" />
 	<link rel="shortcut icon" type="image/png" href="./favicon.png" />
-	<style type="text/css">
-		body {
-			background: #002D3C;
-			color: #00A7FF;
-			font-size: 48px;
-			font-family: "Times New Roman", Times, serif
-		}
-		.icon {
-			width: 78px;
-			height: 78px;
-			transition: transform 0.2s linear;
-			transform: rotate(0deg)
-		}
-		.icon:hover {
-			transition: transform 0.5s linear;
-			transform: rotate(360deg)
-		}
-		.block {
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			height: 135px;
-			width: 270px;
-			margin: auto;
-			text-align: center
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 
 <body>
-	<div class="block">
-	We are on:<br />
-	 <a href="https://play.google.com/store/apps/developer?id=hedhyw"><img title="Google Play" alt="google play" class="icon" src="./goo-play.png" /></a>
+	<div class="main">
+		<img id="avatar" src="./imgs/hedhyw_avatar.png" alt="Hedhyw's avatar"/>
+		<div>
+			<h1 id="title">hedhyw developer</h1>
+			<a href="https://play.google.com/store/apps/developer?id=hedhyw">
+				<img title="Google Play" alt="google play" class="icon" src="./imgs/goo-play.png" />
+			</a>
+			<a href="https://github.com/hedhyw">
+				<img title="Github" alt="Github" class="icon" src="./imgs/Octocat.png" />
+			</a>
+			<a href="https://bitbucket.com/hedhyw">
+				<img title="Bitbucket" alt="Bitbucket" class="icon" src="./imgs/Bitbucket.png" />
+			</a>
+			<a href="https://twitter.com/hedhyw">
+				<img title="Twitter" alt="Twitter" class="icon" src="./imgs/Twitter.png" />
+			</a>
+			<p>
+				<script type="text/javascript">
+					var min_year = 2016;
+					var date = new Date();
+					var cur_year = Math.max(date.getYear(), min_year);
+					if (cur_year == min_year)
+						document.write(cur_year.toString());
+					else
+						document.write(min_year.toString() + "-" + cur_year.toString());
+				</script>
+				<noscript>
+					2016
+				</noscript>
+			</p>
+		</div>
 	</div>
 </body>
 

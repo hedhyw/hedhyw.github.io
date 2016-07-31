@@ -1,0 +1,66 @@
+div {
+	float: right
+}
+
+body {
+	background: #002D3C;
+	color: #00A7FF;
+	font-size: 14pt;
+	font-family: "Times New Roman", Times, serif
+}
+a {
+	text-decoration: none;
+}
+/*#avatar:hover {
+	border-radius: 150pt;
+	margin: 0pt;
+	width: 150pt;
+	height: 150pt;
+	margin-top:10pt;
+	transition: all 0.5s ease-in-out 0s;
+}*/
+#avatar {
+	margin: 20pt;
+	width: 130pt;
+	height: 130pt;
+	transition: all 0.25s ease-in 0s;
+}
+#title:hover {
+	color: transparent;
+	text-shadow: 0pt 0pt 4pt #00A7FF;
+	transition: all 0.5s ease-in-out 0s;
+}
+#title {
+	font-size: 24pt;
+	transition: all 0.25s ease-out 0s;
+}
+.main {
+	padding: 0pt;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 180pt;
+	width: 400pt;
+	margin: auto;
+	text-align: center;
+	background-color: transparent;
+	border-radius: 18pt;
+	transition: all 0.25s ease-out 0s;
+}
+.main:hover {
+	background-color: rgba(77,77,77,0.5);
+	padding: 40pt;
+	transition: all 0.3s ease-in-out 0s;
+}
+.icon {
+	width: 48pt;
+	height: 48pt;
+	transition: transform 0.2s ease-in-out;
+	transform: rotate(0deg)
+}
+.icon:hover {
+	transition: transform 0.5s ease-in-out;
+	transform: rotate(360deg)
+}
