@@ -1,0 +1,13 @@
+.hashtags {
+  display: block;
+  color: #AF391E;
+  font-size: 0.8em;
+}
+.mask_tags .hashtags_calculate{
+  opacity: 0.1;
+  transition: opacity 0.4s ease-out;
+}
+.unmask_tag {
+  opacity: 1.0 !important;
+  transition: opacity 0.4s linear;
+}

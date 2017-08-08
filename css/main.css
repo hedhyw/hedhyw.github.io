@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #232323;
+  background: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12pt;
+  text-align: justify
+}
+a {
+  color: inherit
+}
+a:hover {
+  color: #1EAFA8;
+  cursor: pointer
+}
+h1,h2,h3,h4,h5,h6,h7,h8 {
+  color: #1EAFA8;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+#content section {
+  padding: 10px;
+}
+#content section article {
+  padding: 10px 0;
+}
+
+section article h3 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#works {
+  min-width: 300px;
+  flex-basis: 40%;
+}
+#works article {
+  border-bottom: 1px solid gray;
+}
+
+#about {
+  margin-top: 285px;
+  min-width: 300px;
+  flex-basis: 30%;
+}
+#about h2 {
+  color: #AF391E;
+}
+
+.article_with_img {
+  min-height: 72px;
+}
+.article_with_img:hover > img {
+  margin-left: 4px;
+  opacity: 1;
+  animation: slide 0.5s forwards;
+  animation-play-state: running;
+  animation-direction: normal;
+  transition: margin 0.1s ease-in, opacity 0.1s step-end;
+}
+.article_with_img > img {
+  float: left;
+  opacity: 0;
+  max-width: 64px;
+  max-height: 64px;
+  margin: 4px;
+  margin-left: -68px;
+  transition: margin 0.1s ease-out, opacity 0s step-end;
+}
+
+#lang {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+@media screen and (max-width: 1000px) {
+  #lang {
+    position: absolute;
+    bottom: auto;
+    top: 5px;
+    z-index: 543;
+  }
+}
